@@ -1,0 +1,15 @@
+*{
+    margin: 0 auto;
+    padding: 0 auto;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+body{
+    background-image: url('../img/Design\ sem\ nome\ \(2\).png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
