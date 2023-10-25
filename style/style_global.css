@@ -1,15 +1,21 @@
-*{
-    margin: 0 auto;
-    padding: 0 auto;
+/* definindo padrões para todas as páginas do site */
+* {
+    margin: 0;
+    padding: 0;
 }
 
-a{
+a {
     text-decoration: none;
-    color: white;
+    color: var(--cor-secundaria);
 }
 
-body{
-    background-image: url('../img/Design\ sem\ nome\ \(2\).png');
-    background-repeat: no-repeat;
-    background-size: cover;
+/* Fontes ultilizadas no site */
+@font-face {
+    font-family: R03;
+    src: url("fonts/roboto/Roboto-03.ttf");
+}
+
+@font-face {
+    font-family: R05;
+    src: url("fonts/roboto/Roboto-05.ttf");
 }
