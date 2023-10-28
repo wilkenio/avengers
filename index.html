@@ -18,13 +18,15 @@
         <ul>
             <li
                 style="border-bottom: 1px solid  rgba(145, 145, 145, 0.164);border-right: 1px solid rgba(145, 145, 145, 0.164);">
-                <a href=""><img src="img/logo_avangers.png" alt=""></a></li>
+                <a href=""><img src="img/logo_avangers.png" alt=""></a>
+            </li>
             <li><a href="">INICIO</a></li>
             <li><a href="">SYNOPSIS</a></li>
-            <li><a href="">CAST</a></li>
+            <li id="cast"><a href="">CAST</a></li>
             <li><a href="">GALLERY</a></li>
             <li><a href="">TRAILER</a></li>
-            <li><a href=""><i id="ham" class="fa-solid fa-bars"></i></a></li>
+            <li><i onclick="menuFechar()" id="x" class="fa-regular fa-x"></i> <i onclick="menuAbrir()" id="ham"
+                    class="fa-solid fa-bars"></i></li>
         </ul>
     </nav>
 
@@ -37,9 +39,9 @@
                 <li><a href=""><i class="fa-brands fa-instagram"></i></i></a></li>
             </div>
             <div id="contain-2">
-                <li id="scroll-up"><a href=""><i class="fas fa-chevron-up"></i></a></li>
+                <li id="scroll-up"><i class="fas fa-chevron-up"></i></li>
                 <li id="text-scroll">SCROLL</li>
-                <li id="scroll-down"><a href=""><i class="fas fa-chevron-down"></i></a></li>
+                <li id="scroll-down"><i class="fas fa-chevron-down"></i></li>
             </div>
         </ul>
     </nav>
@@ -51,34 +53,99 @@
             <li><a href="">HISTORIA</a></li>
             <li><a href="">POSTER</a></li>
             <li><a href="">DISENÕ</a></li>
-            <div id="lang"><a href="">ESPN</i></a></div>
+            <div id="lang"><a href="">ESP</i></a></div>
         </ul>
     </nav>
-
+    <!-- secão principal -->
     <section id="scarlet">
-        O Sport Club do Recife (conhecido como Sport e Sport Recife, de monogramo SCR) é um clube brasileiro de
-        desportos, situado no bairro da Ilha do Retiro, cidade do Recife, estado de Pernambuco. Foi fundado em 13 de
-        maio de 1905,[4] pelo pernambucano Guilherme de Aquino Fonseca,[5] que viveu por muitos anos na Inglaterra, onde
-        estudou na Universidade de Cambridge[6] e regressou a Pernambuco trazendo consigo o apreço pelo novo esporte
-        daquele país: o futebol.[7]
 
-        É conhecido pelo seu símbolo maior: o leão; suas cores oficiais são o preto e o encarnado e, desde o ano de
-        1937, manda seus jogos na Ilha do Retiro onde é apoiado pela massa sportista. O Leão da Ilha é um dos clubes
-        mais populares do Brasil,[8][9][10][11][12][13] tendo rivalidades históricas com o América Futebol Clube,[14]
-        com quem duela no Clássico dos Campeões, o primeiro clássico pernambucano em notoriedade;[15] com o Clube
-        Náutico Capibaribe,[16] no confronto conhecido como o Clássico dos Clássicos,[17] sendo este o terceiro clássico
-        mais antigo do país e o mais antigo da Região Nordeste;[18] e com o Santa Cruz Futebol Clube,[19] cujo confronto
-        é denominado de Clássico das Multidões, pois é o que leva habitualmente mais torcedores aos estádios
-        pernambucanos.[20]
+        <div id="personagens">
+            <div class="person"><img id="img_wanda" src="img/Wanda-Final.jpg" alt="">
+                <h3>SCARLET WITCH</h3>
+            </div>
+            <div class="person"><img id="img_drax" src="img/drax.jpg" alt="">
+                <h3>DRAX</h3>
+            </div>
+            <div class="person"><img id="img_nebulosa" src="img/nebulosa.jpg" alt="">
+                <h3>NEBULA</h3>
+            </div>
 
-        No ano de 2010, o Sport Recife foi honrado pela FIFA, com a distinção de ser um Clube Clássico brasileiro,
-        sul-americano e mundial,[21][22] fazendo parte do hall de clubes daquela federação internacional. Tem como
-        principais títulos: um Campeonato Brasileiro, uma Copa do Brasil, um Troféu Roberto Gomes Pedrosa, um Campeonato
-        Brasileiro da Série B, um Torneio Norte-Nordeste, três Copas do Nordeste e 42 títulos pernambucanos. Entre
-        esses, no Século XXI, foram conquistados nove estaduais, uma Copa do Nordeste e uma Copa do Brasil, entre os
-        títulos de maior expressão.[23][24][25][26][27][28][29]
+        </div>
+
+        <div id="text-person">
+            <div id="text-scarlet">
+                <h1>SCARLET <span>WITCH</span></h1>
+                <p>
+                    Feiticeira Escarlate (Scarlet Witch no original) é uma super-heroína que aparece nos quadrinhos
+                    americanos publicados pela Marvel Comics.
+                    A personagem foi criada pelo roteirista Stan Lee e pelo desenhista Jack Kirby.
+                    Sua primeira aparição foi em "X-Men" # 4 (março de 1964) na
+                    Era de prata das histórias em quadrinhos americanas. Possuindo originalmente a capacidade
+                    de alterar a probabilidade, a Feiticeira Escarlate foi retratada como uma feiticeira poderosa
+                    desde os anos 1980 e mais tarde foi considerada poderosa o suficiente para alterar a realidade.
+                    Na maior parte de sua história em quadrinhos, ela é retratada como uma mutante, um membro de uma
+                    subespécie fictícia de humanos nascidos com um "gene X" que concede habilidades e características
+                    sobre-humanas, mas no Universo
+                    Cinematográfico Marvel, a nova fonte de seus poderes consiste em magia natural amplificada por uma
+                    experimentação da Hidra com a Joia da Mente quando ela era mais jovem.
+                    <br><br>A Feiticeira Escarlate é retratada pela primeira vez como uma supervilã relutante junto com
+                    seu irmão gêmeo Pietro Maximoff (Mercúrio), ambos membros fundadores da Irmandade dos Mutantes. Um
+                    ano após sua estréia, ela se juntou à equipe de super-heróis dos Vingadores e, desde então, tem sido
+                    frequentemente retratada como um membro regular dessa equipe ou de equipes relacionadas (como os
+                    Vingadores da Costa Oeste e a Força Tarefa)
+                </p>
+            </div>
+
+            <div id="text-drax">
+                <h1>DRAX <span></span></h1>
+                <p>
+                    Drax the Destroyer, often referred to simply as Drax, is a fictional character portrayed by Dave
+                    Bautista
+                    in the Marvel Cinematic Universe (MCU) media franchise, based on the Marvel Comics character of the
+                    same name.
+                    Drax is depicted as a dimwitted warrior who seeks vengeance against the man who killed his family,
+                    Ronan the Accuser.
+                    Drax joins the Guardians of the Galaxy in their battle against Ronan. He participates in the
+                    conflict against Thanos, falling victim to the Blip before being resurrected by the Avengers.
+                    Drax and the Guardians depart for space and come into conflict with the High Evolutionary before
+                    Drax retires to watch over the children of the newly established colony on Knowhere.
+                    Cinematográfico Marvel, a nova fonte de seus poderes consiste em magia natural amplificada por uma
+                    experimentação da Hidra com a Joia da Mente quando ela era mais jovem.
+                    <br><br>As of 2023, the character has appeared in six films and The Guardians of the Galaxy Holiday
+                    Special (2022) as well as the Disney+ animated series What If...? (2021) as alternate versions,
+                    voiced by Fred Tatasciore. Guardians of the Galaxy Vol. 3 (2023) was Bautista's final appearance as
+                    the character.
+                </p>
+            </div>
+
+            <div id="text-nebulosa">
+                <h1>NEBULA <span></span></h1>
+                <p>
+                    Nebula is a fictional character in the Marvel Cinematic Universe (MCU) media franchise, portrayed by
+                    Karen Gillan,
+                    based on the Marvel Comics character of the same name. She is depicted as a blue-skinned alien
+                    warrior who is both the adoptive
+                    daughter of Thanos, who killed her blood family before raising her, and the adoptive sister of
+                    Gamora, with whom she grew to share
+                    a bitter rivalry. Although she is first introduced as the secondary antagonist of Guardians of the
+                    Galaxy (2014), subsequent films
+                    see her develop into an antihero and eventually a protagonist, who joins her sister as part of the
+                    Guardians of the Galaxy and becomes
+                    a member of the Avengers and then officially of the Guardians of the Galaxy.[2] Aspects of this
+                    interpretation were later integrated into the comics version of the character.
+                    <br><br>The character was met with positive reception, specifically for Gillan's performance and
+                    redemptive story arc; she has been noted for her differences
+                    from the comics, in which Nebula is almost exclusively depicted as a villain.[4][5]
+                </p>
+            </div>
+
+
+
+        </div>
+
     </section>
 
+    <script src="js/js.js"></script>
 
 </body>
 

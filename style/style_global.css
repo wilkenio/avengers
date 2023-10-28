@@ -3,6 +3,16 @@
     margin: 0;
     padding: 0;
 }
+/* removendo o scroll */
+::-webkit-scrollbar {
+    width: 0px;
+  }
+
+@media (max-width: 1050px) {
+    body{
+        background-color: black;
+    }
+}
 
 a {
     text-decoration: none;
@@ -10,6 +20,10 @@ a {
 }
 
 /* Fontes ultilizadas no site */
+@font-face {
+    font-family: R01;
+    src: url("fonts/roboto/Roboto-01.ttf");
+}
 @font-face {
     font-family: R03;
     src: url("fonts/roboto/Roboto-03.ttf");
@@ -19,3 +33,4 @@ a {
     font-family: R05;
     src: url("fonts/roboto/Roboto-05.ttf");
 }
+

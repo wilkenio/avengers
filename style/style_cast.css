@@ -1,6 +1,8 @@
 /* variáveis de cor */
 :root {
     --cor-secundaria: white;
+    --cor-relativa1: #FF0E39;
+    --cor-relativa2: rgb(231, 104, 0);
 }
 
 /* estilo do menu do topo */
@@ -9,6 +11,7 @@
     backdrop-filter: blur(7px);
     border-bottom: 1px solid rgba(145, 145, 145, 0.164);
     position: fixed;
+    z-index: 9;
 }
 
 #nav-topo ul {
@@ -54,17 +57,34 @@
 
 #ham {
     font-size: 1.5rem;
+    color: var(--cor-secundaria);
 }
+
+#x {
+    font-size: 1.5rem;
+    color: var(--cor-secundaria);
+    display: none;
+}
+
 
 /* Começo da responsividade do menu do topo */
 @media (max-width: 1050px) {
+    #nav-topo {
+        background-color: rgba(0, 0, 0, 0.151);
+        backdrop-filter: blur(1px);
+    }
 
     #nav-topo ul li {
         display: none;
+        padding: 3.5vh;
     }
 
     #nav-topo ul li:nth-child(3n+1) {
         display: flex;
+    }
+
+    #nav-topo ul li a img {
+        width: 150%;
     }
 }
 
@@ -96,11 +116,14 @@
 }
 
 #contain-2 {
+
     height: 63vh;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: flex-end;
+    bottom: 0;
+    color: var(--cor-secundaria);
 }
 
 #contain-2 li {
@@ -109,7 +132,7 @@
 
 #text-scroll {
     transform: rotate(90deg);
-    font-size: 0.8rem;
+    font-size: 1.8vh;
     font-family: R05;
     color: var(--cor-secundaria);
     margin-top: 50%;
@@ -120,14 +143,14 @@
 #scroll-up {
     width: 60%;
     text-align: center;
-    background-image: linear-gradient(to bottom right, rgb(184, 3, 78), rgb(255, 94, 0));
+    background-image: linear-gradient(to bottom right, var(--cor-relativa2), var(--cor-relativa1));
     cursor: pointer;
 }
 
 #scroll-down {
     width: 60%;
     text-align: center;
-    background-image: linear-gradient(to bottom right, rgb(184, 3, 78), rgb(255, 94, 0));
+    background-image: linear-gradient(to bottom right, var(--cor-relativa1), var(--cor-relativa2));
     cursor: pointer;
     transition: 0.5s;
 }
@@ -140,16 +163,46 @@
     box-shadow: 0px 0px 45px 22px rgba(255, 255, 255, 0.055);
 }
 
+/* Começo da responsividade do menu da esquerda */
+@media (max-width: 1050px) {
+
+    #nav-esquerda {
+        background-color: rgba(0, 0, 0, 0.363);
+        box-shadow: 0px 0px 45px 22px rgba(12, 12, 12, 0.377);
+        backdrop-filter: blur(4px);
+        right: 0;
+        padding: 5.5%;
+        top: 8.5vh;
+    }
+
+    #contain-2 {
+        gap: 10%;
+        justify-content: center;
+        font-size: 0.6rem;
+    }
+
+    #scroll-up {
+        background-image: none;
+    }
+
+    #scroll-down {
+        background-image: none;
+    }
+
+    #text-scroll {
+        font-size: 0.6rem;
+    }
+}
 
 /* estilo do menu da direita */
 #nav-direita {
     position: fixed;
     display: flex;
-    right: 0;
-    margin-top: 11vh;
+    right: -100%;
+    margin-top: 12vh;
     height: 89.3vh;
-
     backdrop-filter: blur(7px);
+    transition: 0.3s ease-in-out;
 }
 
 #nav-direita ul {
@@ -166,21 +219,190 @@
     padding: 37.5% 35%;
     transition: 0.5s;
     font-family: R03;
-    font-size: 1rem;
+    font-size: 3vh;
 }
 
 #nav-direita ul li:hover {
-    background-image: linear-gradient(to bottom right, rgb(184, 3, 78), rgb(255, 94, 0));
+    background-image: linear-gradient(to bottom right, var(--cor-relativa1), var(--cor-relativa2));
     box-shadow: 0px 0px 45px 22px rgba(255, 255, 255, 0.219);
 }
 
-/* seção da personagem scarlet */
+@media (max-width: 1050px) {
+    #nav-direita {
+        width: 100%;
+        justify-content: center;
+        background-color: #1313136e;
+        margin-top: 11.8vh;
+    }
+
+    #nav-direita ul li {
+        transform: rotate(0deg);
+    }
+
+    #nav-direita ul li:hover {
+        background-image: none;
+        box-shadow: none;
+    }
+}
+
+/* seção dos personagens */
 #scarlet {
-    width: 88%;
+    width: 95.5%;
     height: 100vh;
-    padding: 6%;
-    background-image: url('../img/Design\ sem\ nome\ \(2\).png');
+    background-image: url('../img/01.png');
     background-repeat: no-repeat;
     background-size: cover;
-    background-position-x: 80%;
+    background-position-x: 100%;
+    color: var(--cor-secundaria);
+    display: flex;
+    justify-content: center;
+    padding: 2.2%;
+    padding-bottom: 2%;
+}
+
+#text-person {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    padding: 3%;
+    margin-top: 2%;
+}
+
+#text-person h1 {
+    width: 60%;
+    font-family: R05;
+    font-size: 3rem;
+    padding-bottom: 2%;
+    border-bottom: 3px solid;
+    border-image: linear-gradient(to right,
+            var(--cor-relativa2) 10%,
+            var(--cor-relativa1) 60%,
+            rgba(206, 206, 206, 0.274) 20%) 30;
+}
+
+#text-person p {
+    margin-top: 5%;
+    font-family: R03;
+    letter-spacing: 1.2px;
+    font-size: 1rem;
+}
+
+#personagens {
+    width: 18%;
+    height: 100%;
+    margin-top: 3.5%;
+    position: fixed;
+    overflow: auto;
+    left: 2%;
+}
+
+#personagens {
+    display: flex;
+    flex-direction: column;
+    z-index: 6;
+    scroll-behavior: smooth;
+}
+
+.person {
+    width: 100%;
+}
+
+.person img {
+    width: 100%;
+    border-left: 5px solid rgba(255, 0, 0, 0);
+    filter: brightness(0.3);
+    background-color: #1c083a;
+    transition: 1s;
+    z-index: 5;
+    cursor: pointer;
+}
+
+.person img:hover {
+    filter: brightness(1);
+    border-image: linear-gradient(to top,
+            var(--cor-relativa1) 6%,
+            var(--cor-relativa2) 80%,
+            var(--cor-relativa2) 2%) 30;
+}
+
+.person h3 {
+    position: absolute;
+    background-color: red;
+    left: 8%;
+    top: -4%;
+    font-family: R01;
+    font-size: 1vw;
+    z-index: 9;
+}
+
+#personagens {
+    width: 18%;
+    margin-left: 4%;
+    margin-top: 3.5%;
+}
+
+#personagens {
+    display: flex;
+    flex-direction: column;
+    z-index: 6;
+}
+
+.person {
+    width: 100%;
+}
+
+.person img {
+    width: 100%;
+    border-left: 5px solid rgba(255, 0, 0, 0);
+    filter: brightness(0.3);
+    background-color: #1c083a;
+    transition: 1s;
+}
+
+.person img:hover {
+    filter: brightness(1);
+    border-image: linear-gradient(to top,
+            var(--cor-relativa1) 6%,
+            var(--cor-relativa2) 80%,
+            var(--cor-relativa2) 2%) 30;
+}
+
+#img_wanda {
+    filter: brightness(1);
+    border-image: linear-gradient(to top,
+            var(--cor-relativa1) 6%,
+            var(--cor-relativa2) 80%,
+            var(--cor-relativa2) 2%) 30;
+}
+
+#text-drax {
+    display: none;
+}
+
+#text-nebulosa {
+    display: none;
+}
+
+@media (max-width: 1050px) {
+    #scarlet {
+        width: 98%;
+        padding: 1%;
+        height: 100%;
+        background-position-x: 100%;
+        background-position-y: -5%;
+        background-size: 300%;
+    }
+
+    #text-person {
+        width: 80%;
+        background: linear-gradient(to top, rgb(0, 0, 0), rgba(0, 0, 0, 0.849));
+        box-shadow: 0px 0px 95px 92px rgba(0, 0, 0, 0.884);
+        margin-top: 40vh;
+        padding: 0;
+        margin-left: -10%;
+    }
+
+    #personagens {
+        display: none;
+    }
 }
