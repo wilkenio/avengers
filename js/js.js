@@ -62,7 +62,7 @@ function drax() {
     textoNebulosa.style.display = "none"
     personagens.scrollTop = personagens.scrollTop + 120;
     //mudando imagem de fundo 
-    scarlet.style.backgroundImage = "url('../img/02.png')";
+    scarlet.style.backgroundImage = "url('img/02.png')";
     draxImg.style.filter = 'brightness(1)'
     draxImg.style.borderImage = 'linear-gradient(to top, var(--cor-relativa1) 6%, var(--cor-relativa2) 80%, var(--cor-relativa2) 2%) 30';
     scarletImg.style.borderImage = 'none'
@@ -83,7 +83,7 @@ function scarlett() {
     textoNebulosa.style.display = "none"
     personagens.scrollTop = personagens.scrollTop - 120;
     //mudando imagem de fundo 
-    scarlet.style.backgroundImage = "url('../img/01.png')";
+    scarlet.style.backgroundImage = "url('img/01.png')";
     draxImg.style.filter = 'brightness(0.3)'
     nebulosaImg.style.filter = 'brightness(0.3)'
     draxImg.style.borderImage = 'none';
@@ -103,7 +103,7 @@ function nebula() {
     textoNebulosa.style.display = "block"
     personagens.scrollTop = personagens.scrollTop + 120;
     //mudando imagem de fundo 
-    scarlet.style.backgroundImage = "url('../img/03.png')";
+    scarlet.style.backgroundImage = "url('img/03.png')";
     draxImg.style.filter = 'brightness(0.3)'
     //scarlet.style.filter = 'brightness(0.3)'
     draxImg.style.borderImage = 'none';

@@ -230,9 +230,10 @@
 @media (max-width: 1050px) {
     #nav-direita {
         width: 100%;
+        height: 92vh;
         justify-content: center;
         background-color: #1313136e;
-        margin-top: 11.8vh;
+        margin-top: 9.4vh;
     }
 
     #nav-direita ul li {
